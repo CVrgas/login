@@ -1,0 +1,174 @@
+.container{
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    border-radius: 1.25rem;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    background-color: white;
+    box-shadow:  5px 5px 10px #949494, -5px -5px 10px #ffffff;
+    animation: 1s pop;
+}
+.register, .login{
+    width: 50%;
+    margin: 30px;
+}
+.register{
+    padding-top: 40px;
+}
+.login{
+    padding-top: 40px;
+}
+.logo-i{
+    font-size: 75px;
+    margin-bottom:30px;
+    color: rgb(0, 89, 255);
+}
+.login h4, .register h4{
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin: 0 0 20px 0;
+}
+.form{
+    margin: 0 0 30px;
+    display: grid;
+    gap: 10px;
+}
+.form input{
+    border: 1px solid black;
+    font-family: inherit;
+    font-size:  16px;
+    padding: 0 24px;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+}
+.form input::placeholder{
+    letter-spacing: 1px;
+    color: rgb(160, 160, 160);
+}
+.register .form button{
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    color: white;
+    background: rgb(185, 64, 64);
+    font-family: inherit;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600px;
+    text-align: center;
+    letter-spacing: 2px;
+    height: 50px;
+    border-radius: 20px;
+}
+.login .form button{
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    color: white;
+    background:  rgb(61, 113, 209);
+    font-family: inherit;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600px;
+    text-align: center;
+    letter-spacing: 2px;
+    height: 50px;
+    border-radius: 20px;
+}
+.form i{
+    font-size: 20px;
+    position: absolute;
+    margin: 15px;
+    right: 25px;
+    color: rgb(54, 54, 54);
+}
+.form a{
+    color: blue;
+    font-size: 15px;
+    margin: 0px 10px 10px 0px;
+    text-align: end;
+    text-decoration: underline;
+}
+.google{
+    border-top: 1px solid gray; 
+    padding-top: 20px; 
+    margin-top: 10px;
+    position: relative;
+    text-align: start;
+}
+.google button{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+}
+.google i{
+    font-size: 30px;
+    position: absolute;
+    /* left: 10px; */
+    color: rgb(54, 54, 54);
+    /* width: max-content; */
+    margin: 11px;
+    margin-left: 50px;
+}
+.cover{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(61, 113, 209);
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+}
+.cover div{
+    flex-grow: 1;
+}
+.cover h2{
+    margin: 0;
+    margin-top: 50%;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 34px;
+    
+}
+.cover h4{
+    margin: 5px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.MoveRight{
+    animation: 0.5s MoveRight forwards;
+}
+.MoveLeft{
+    animation: 0.5s MoveLeft forwards;
+    
+}
+@keyframes MoveRight {
+    0% {  transform: translateX(0%); }
+    100% {  transform: translateX(100%); background-color: rgb(185, 64, 64);}
+}
+@keyframes MoveLeft {
+    0% {  transform: translateX(100%); }
+    100% {  transform: translateX(0%); }
+
+}
+@keyframes pop{
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}

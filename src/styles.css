@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+
+}
+body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+    font-family: 'Inter', sans-serif;
+}
